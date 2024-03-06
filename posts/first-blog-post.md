@@ -9,6 +9,8 @@ Alrighty let's get started!
 
 ![a picture of a computer with code](/240306_first_post/ccs_pfp.jpg)
 
+<iframe src="https://editor.p5js.org/s3942372/full/RPKqRVLDE" width="100%" height="242"></iframe>
+
 Hello, world!
 
 # This is h1

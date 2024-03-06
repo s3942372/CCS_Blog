@@ -13,6 +13,8 @@ Alrighty let's get started!
 
 Hello, world!
 
+Homework: choose one of the Raphael works and try to figure out how he made it, then try to recreate it.
+
 # This is h1
 
 ## This is h2

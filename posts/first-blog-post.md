@@ -6,6 +6,8 @@ snippet: This is an excerpt of my first blog post and my first entry into the wo
 
 Alrighty let's get started!
 
+![a picture of a computer with code](/240306_first_post/ccs_pfp.jpg)
+
 Hello, world!
 
 # This is h1

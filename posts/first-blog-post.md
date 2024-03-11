@@ -13,7 +13,9 @@ Alrighty let's get started!
 
 Hello, world!
 
-Homework: 1. make a grid of squares move the way teacher did. 2. choose one of the Raphael works and try to figure out how he made it, then try to recreate it.
+# Week 1 Homework
+
+## Part 1
 
 # This is h1
 

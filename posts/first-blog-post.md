@@ -36,6 +36,10 @@ Got the grid (kinda) format now. This was done by including the for loop determi
 
 ![why are you still circular](/week_1_homework/whyareyoustillcircles.png)
 
+Was trying to figure out why the border is missing and then realised I had 'noStroke' in the 'function'. Got rid of that and the borders are now back. Yay.
+
+![borders are back](/week_1_homework/atleastigottheborderback.png)
+
 # Week 2 Homework
 
 ## Help

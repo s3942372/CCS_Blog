@@ -22,10 +22,15 @@ First tried to just input multiple copies of the already existing line of square
 
 ![what is this mess of squares really](/week_1_homework/whatisthismess.png)
 
+I then tried to create an x-axis (a row) and a y-axis (a column) thinking that if I'm able to get those I'll be able to fill out the rest of the grid. Not sure if I succeeded or not. Got both a row and column, but they are entire bars,rectangles, not individual squares making up a row and a column.
 
-# This is h1
+![success! but is it really?](/week_1_homework/getthatxvariabletoo.png)
 
-## This is h2
+Honestly I think I'm just messing around until something works.
+
+# Week 2 Homework
+
+## Help
 
 _underline_
 

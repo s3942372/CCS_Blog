@@ -32,6 +32,10 @@ Monday night right now and I haven't been able to work on this since last Wednes
 
 ![trying again to section the squares off - they're circles now](/week_1_homework/whyareyoucircles.png)
 
+Got the grid (kinda) format now. This was done by including the for loop determining the columns into the code of the for loop determining the rows. Everything is still circular though.
+
+![why are you still circular](/week_1_homework/whyareyoustillcircles.png)
+
 # Week 2 Homework
 
 ## Help

@@ -28,6 +28,10 @@ I then tried to create an x-axis (a row) and a y-axis (a column) thinking that i
 
 Honestly I think I'm just messing around until something works.
 
+Monday night right now and I haven't been able to work on this since last Wednesday. I should probably look up resources to make finding a solution easier but I'm stubborn and I want to see if I can somehow just manage to stumble upon the answer. I've now gotten rid of the lines of code meant to create the growing and shrinking of the squares so I can focus on just making a grid. I've also somehow managed to make everything a circle. Joy.
+
+![trying again to section the squares off - they're circles now](/week_1_homework/whyareyoucircles.png)
+
 # Week 2 Homework
 
 ## Help

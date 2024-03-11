@@ -9,13 +9,18 @@ Alrighty let's get started!
 
 <iframe src="https://editor.p5js.org/s3942372/full/RPKqRVLDE" width="100%" height="242px"></iframe>
 
-![a picture of a computer with code](/240306_first_post/ccs_pfp.jpg)
+![a picture of a computer with code](/week_1_homework/ccs_pfp.jpg)
 
 Hello, world!
 
 # Week 1 Homework
 
 ## Part 1
+Started to try and make a grid - wasn't very sure if we're making a static grid or one that moves like the example sketch did.
+
+First tried to just input multiple copies of the already existing line of squares - did not work, could only have 4 of them on screen in total, not to mention they start to fuse together as they grew in size, so I'll just try to make a static square instead. Pretty sure that's what we're supposed to do anyways.
+![what is this mess of squares really](/week_1_homework/whatisthismess.png)
+
 
 # This is h1
 

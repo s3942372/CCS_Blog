@@ -40,9 +40,13 @@ Was trying to figure out why the border is missing and then realised I had 'noSt
 
 ![borders are back](/week_1_homework/atleastigottheborderback.png)
 
-Finally got the grid as squares. It only took an hour of me staring at my laptop in confused frustration. Changed the code in line 12 from 'square (100 * x, 100 * y, 100, 100)' to 'rect (100 * x, 100 * y, 100, 100)' and it was fixed.
+Finally got the grid as squares. It only took an hour of me staring at my laptop in confused frustration. Changed the code in line 12 from 'square (100 * x, 100 * y, 100, 100)' to 'rect (100 * x, 100 * y, 100, 100)' and it was fixed. it was actually frustratingly easy and simple in hindsight.
 
 ![it's a grid now](/week_1_homework/hellyeahididit.png)
+
+Finished(?) product:
+
+<iframe src="https://editor.p5js.org/s3942372/full/I971ryDnE" width="500px" height="500px"></iframe>
 
 # Week 2 Homework
 

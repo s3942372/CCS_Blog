@@ -15,6 +15,8 @@ Hello, world!
 
 # Week 1 Homework
 
+Honestly the worst part about this week was that first my laptop crashed, and then the wifi was down.
+
 ## Part 1
 Started to try and make a grid - wasn't very sure if we're making a static grid or one that moves like the example sketch did.
 

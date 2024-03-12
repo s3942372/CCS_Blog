@@ -53,7 +53,15 @@ Finished(?) product:
 
 To start, let me profess: I give up. 
 
-It's currently Tuesday, 10:00 pm, and I just got off my shift at my part-time job an hour ago. I've decided to try and recreate Rafael Rozendaal's <link 'Why Was He Sad' src=https://www.whywashesad.com/>
+It's currently Tuesday, 10:00 pm, and I just got off my shift at my part-time job an hour ago. I've decided to try and recreate Rafael Rozendaal's 'Why Was He Sad' (https://www.whywashesad.com/) and well, it was here that I've realised that I made a mistake. I am familiar with HTML, CSS and JavaScript on Visual Studio Code - I am not familar with P5. I also have a limited time, so the best I could do in the next two hours was just create several squares, have them move across the screen, and disappear when you click the screen. If I can work on this more this week I'll try to recreate it more accurately but so far it's pretty bad (to be fair I did try to recreate 'Open This Window' (https://www.openthiswindow.com/) first but the less said about that attempt the better - also pretty sure Rozendaal did not make this one using P5).
+
+Failed attempt numero uno - why can't I drag the square?????:
+
+![gotta try again during the weekend](/week_1_homework/whycantidragyou.png)
+
+Semi failed attempt numero dos - I wanna work on it more:
+
+![gotta try again during the weekend](/week_1_homework/orderthemsquares.png)
 
 <iframe src="https://editor.p5js.org/s3942372/full/sX--IYrCF" width="100%" height="800px"></iframe>
 

@@ -48,6 +48,15 @@ Finished(?) product:
 
 <iframe src="https://editor.p5js.org/s3942372/full/I971ryDnE" width="100%" height="800px"></iframe>
 
+
+## Part 2
+
+To start, let me profess: I give up. 
+
+It's currently Tuesday, 10:00 pm, and I just got off my shift at my part-time job an hour ago. I've decided to try and recreate Rafael Rozendaal's <link 'Why Was He Sad' src=https://www.whywashesad.com/>
+
+<iframe src="https://editor.p5js.org/s3942372/full/sX--IYrCF" width="100%" height="800px"></iframe>
+
 # Week 2 Homework
 
 ## Help

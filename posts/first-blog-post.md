@@ -65,6 +65,8 @@ Semi failed attempt numero dos - I wanna work on it more:
 
 ![gotta try again during the weekend](/week_1_homework/orderthemsquares.png)
 
+By the way, is there a P5 version of 'mouseonHover' or something? I could not find it.
+
 <iframe src="https://editor.p5js.org/s3942372/full/sX--IYrCF" width="100%" height="800px"></iframe>
 
 Hooray the blog now isn't loading for some reason. Going on the website only has the default template appear. Whoo thisissogreat...

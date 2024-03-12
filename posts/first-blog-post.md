@@ -48,6 +48,8 @@ Finished(?) product:
 
 <iframe src="https://editor.p5js.org/s3942372/full/I971ryDnE" width="100%" height="800px"></iframe>
 
+Hooray the blog now isn't loading for some reason. Going on the website only has the default template appear. Whoo thisissogreat...
+
 
 ## Part 2
 

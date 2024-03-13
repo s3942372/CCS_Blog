@@ -67,7 +67,13 @@ Semi failed attempt numero dos - I wanna work on it more:
 
 By the way, is there a P5 version of 'mouseonHover' or something? I could not find it.
 
-<iframe src="https://editor.p5js.org/s3942372/full/sX--IYrCF" width="100%" height="800px"></iframe>
+<iframe id="failed_clouds" src="https://editor.p5js.org/s3942372/full/sX--IYrCF" width="100%" height="800px"></iframe>
+
+<script type="module">
+    const iframe = document.getElementById ('failed_clouds')
+    iframe.width = iframe.parentNode.scrollWidth
+    iframe.height = iframe.parentNode.scrollWidth + 42
+    </script>
 
 Hooray the blog now isn't loading for some reason. Going on the website only has the default template appear. Whoo thisissogreat...
 

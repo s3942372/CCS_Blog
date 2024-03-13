@@ -48,7 +48,11 @@ Finally got the grid as squares. It only took an hour of me staring at my laptop
 
 Finished(?) product:
 
+<div align="center">
+
 <iframe src="https://editor.p5js.org/s3942372/full/I971ryDnE" width="100%" height="800px"></iframe>
+
+</div>
 
 
 ## Part 2

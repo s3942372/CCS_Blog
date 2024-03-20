@@ -85,6 +85,11 @@ Update: 1:15 A.M. I fixed it.
 
 # Week 2 Homework
 
+## Part 1
+So apparently nobody did this part, which, understandable, really.
+
+## Part 2
+
 ## Help
 
 _underline_

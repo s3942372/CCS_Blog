@@ -90,7 +90,8 @@ So apparently nobody did this part, which, understandable, really.
 
 ## Part 2
 
-## Help
+# Assignment 1
+TALK ABOUT NGAI'S AESTHETIC CATEGORY OF 'CUTE' AND EFFECTIVE COMPLEXITY!!!!!!!!!!!!!!!
 
 _underline_
 

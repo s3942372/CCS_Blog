@@ -106,6 +106,8 @@ For the assignment I was unable to start in time and had to request an extension
 
 What it did allow me was time to think about what to do for the assignment, and I had ultimately decided on creating my response to Rafaël Rozendaal's work [Fatal to the Flesh](https://www.fataltotheflesh.com/). This work was created to give people an outlet. Accessible on any device, it allows users to take out their frustrations on this 'digital skin' rather than actually harming themselves. I wished to take this concept and play on the opposite. Rather than cutting the 'skin', I wanted people to 'heal' it.
 
+It is now Thursday of the mid-term break and I can finally lift my arm, somewhat. My wrist is feeling better too.
+
 I started off by attempting to create a workable prototype where I could draw lines onto a white canvas. As can be seen in the screenshot below, I created several functions where upon clicking, dragging and releasing the mouse, a line will be drawn. The direction and length of the line is also determined by the start point (where the mouse is clicked) and the end point (where the mouse is released).
 
 ![Try 1: Draw Lines](/assignment_1/a1p1.png)

@@ -112,6 +112,8 @@ I started off by attempting to create a workable prototype where I could draw li
 
 ![Try 1: Draw Lines](/assignment_1/a1p1.png)
 
+Having succeeded in this, I then decided to try and create the same thing, only this time the lines are replaced by bandaids.
+
 
 _underline_
 

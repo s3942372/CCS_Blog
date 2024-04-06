@@ -102,6 +102,13 @@ To put it simply, 'Effective complexity' is a measure of the information - the c
 
 For Sianne Ngai, the aesthetic category of 'cute' is something that is intimate and domestic. It is about consumption and the relationship between a subject and an object, it is warm and fuzzy and its apparent vulnerability can be and is weaponised by invoking either the more caring side or the more sadistic side of a person. For example, the teddybear. Many children when given a teddybear choose to care for it like a child or a pet of their own. They dress it up and feed it, sleep with it, even going so far as to give it a makeshift family or have tea parties with it. Yet, there are also children who do not do this, instead they would beat up the teddybear, throw it around, and rip open it's body to expose its soft stuffing insides before emptying it out. By using the aesthetic of 'cute', artists can draw the response they wish from their audience.
 
+For the assignment I was unable to start in time and had to request an extension due to having two sudden declines in my physical well-being (sorry about that). The first decline happened about mid week 3 and was my right wrist, which could not be put under pressure or bent without pain and had to be kept still for quite a while, while the second decline in health occurred on Tuesday of week 4, during which I started experiencing intense pain in my neck, shoulders, back and left arm (not to mention my wrist from week 3). This basically left me having to keep these areas immobile, and being unable to lift my arms meant I could not type very well and code out the assignment.
+
+What it did allow me was time to think about what to do for the assignment, and I had ultimately decided on creating my response to Rafaël Rozendaal's work "fatal to the flesh" (https://www.fataltotheflesh.com/). This work was created to give people an outlet. Accessible on any device, it allows users to take out their frustrations on this 'digital skin' rather than actually harming themselves. I wished to take this concept and play on the opposite. Rather than cutting the 'skin', I wanted people to 'heal' it.
+
+I started off by attempting to create a workable prototype where I could draw lines onto a white canvas. As can be seen in the screenshot below, I created several functions where upon clicking, dragging and releasing the mouse, a line will be drawn. The direction and length of the line is also determined by the start point (where the mouse is clicked) and the end point (where the mouse is released).
+
+![Try 1: Draw Lines](/assignment_1/a1p1.png)
 
 
 _underline_

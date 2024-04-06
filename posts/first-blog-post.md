@@ -84,14 +84,25 @@ Hooray the blog now isn't loading for some reason. Going on the website only has
 Update: 1:15 A.M. I fixed it.
 
 # Week 2 Homework
+*COULD NOT BE COMPLETED DUE TO WRIST PAIN
 
 ## Part 1
-So apparently nobody did this part, which, understandable, really.
+
+## Part 2
+
+# Week 3 Homework
+*COULD NOT BE COMPLETED DUE TO BACK, SHOULDER, NECK, ARM AND WRIST PAIN (clearly my condition is worsening)
+
+## Part 1
 
 ## Part 2
 
 # Assignment 1
-TALK ABOUT NGAI'S AESTHETIC CATEGORY OF 'CUTE' AND EFFECTIVE COMPLEXITY!!!!!!!!!!!!!!!
+To put it simply, 'Effective complexity' is a measure of the information - the complexity - within a system. For there to be an 'effective' amount of complexity, the information given cannot be too 'ordered' or 'disordered'. If it is too 'ordered', then the information is fairly lacking in variation and can be considered boring or disinteresting by other parties. Little to no information can be extracted as well as there is no variation in what is presented. Similarly, if it is too 'disorderd', then the information given is nonsensical, with no structure and no information that can be understood. As such, there needs to be a balance, a middlepoint between ordered and disordered in which people are then able to extract the maximum information they can. 
+
+For Sianne Ngai, the aesthetic category of 'cute' is something that is intimate and domestic. It is about consumption and the relationship between a subject and an object, it is warm and fuzzy and its apparent vulnerability can be and is weaponised by invoking either the more caring side or the more sadistic side of a person. For example, the teddybear. Many children when given a teddybear choose to care for it like a child or a pet of their own. They dress it up and feed it, sleep with it, even going so far as to give it a makeshift family or have tea parties with it. Yet, there are also children who do not do this, instead they would beat up the teddybear, throw it around, and rip open it's body to expose its soft stuffing insides before emptying it out. By using the aesthetic of 'cute', artists can draw the response they wish from their audience.
+
+
 
 _underline_
 

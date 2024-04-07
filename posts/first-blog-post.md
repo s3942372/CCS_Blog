@@ -138,7 +138,13 @@ If Rafaël Rozendaal's work "Fatal to the Flesh" is a type of 'cute' that calls 
 
 (Or maybe I'm just writing nonsense while on painkillers.)
 
+<iframe id="Healing of the Flesh" src="https://editor.p5js.org/s3942372/full/KfYp2kEdj" width="100%" height="800px"></iframe>
 
+<script type="module">
+    const iframe = document.getElementById ('heal_flesh')
+    iframe.width = iframe.parentNode.scrollWidth
+    iframe.height = iframe.parentNode.scrollWidth + 42
+</script>
 
 
 

@@ -251,6 +251,20 @@ const draw_frame = () => {
 ```
 Frames are repeatedly rendered on the canvas in a loop. If 'is_glitching' is set to 'true' then the glitched images from the array is displayed on the canvas and the probability of the glitch effect occuring is set to '0.05'. If it's set to 'false' then the original image is drawn on the canvas and the probability of the glitch effect occuring is set to '0.02'. A random number is then generated and if it is less than the probability the glitch effect is triggered. 'is_glitching' is then toggled to become the opposite; 'true' becomes 'false' and vice versa. Finally the last line creates a loop that repeatedly renders the frames on the canvas, making it appear as if the glitch is constantly happening.
 
+## Part 2: Pixel Sort
+
+## Part 3: Glitch Self-Portrait
+I CAN"T GET IT TO WORK?!?!?!!?!?!
+
+## Part 4: Readings
+I.
+Glitch belongs most to Sianne Ngai's aesthetic category of 'interesting'. 'Interesting', to Ngai, is "some variation from a norm". 'Interesting' shifts, between "the familiar and the unfamiliar, identity and difference, continuity and break", and yet its variation can be big and small.
+
+Glitches are unconventional and sometimes unpredictable manifestations, and can evoke a sense of curiosity and fascination. It can capture attention and provoke thought. It's unfamilar, and causes people to question "Why?". Compared to the other two ('Zany' and 'Cute'), glitch fits the aesthetic category of 'interesting' much more. It does not cause it's users to experience care or sadism, nor is it performative, provoking intimacy with the subject.
+
+II.
+I believe glitch increases effective complexity. As stated before, effective complexity is essentially comprised of both 'order' and 'disorder'. There needs to be a balance of both to have effective complexity. Too much 'order' and it's boring, too much 'disorder' and it's nonsensical. As such the more balanced, the more effectively complex a work is. Glitch (or at the very least the code that it's comprised of) is neither too 'ordered' or 'disorderd'. It is not consistently repeating the exact same information, nor is it giving out nonsensical information. It contains a balance of the two and produces a work that is visually interesting to the viewers.
+
 
 
 

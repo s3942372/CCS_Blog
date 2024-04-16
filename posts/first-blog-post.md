@@ -256,6 +256,8 @@ Frames are repeatedly rendered on the canvas in a loop. If 'is_glitching' is set
 ## Part 3: Glitch Self-Portrait
 I CAN"T GET IT TO WORK?!?!?!!?!?!
 
+Ok so clearly I did everything wrong. Oops.
+
 ## Part 4: Readings
 I.
 Glitch belongs most to Sianne Ngai's aesthetic category of 'interesting'. 'Interesting', to Ngai, is "some variation from a norm". 'Interesting' shifts, between "the familiar and the unfamiliar, identity and difference, continuity and break", and yet its variation can be big and small.

@@ -267,6 +267,9 @@ Glitches are unconventional and sometimes unpredictable manifestations, and can 
 II.
 I believe glitch increases effective complexity. As stated before, effective complexity is essentially comprised of both 'order' and 'disorder'. There needs to be a balance of both to have effective complexity. Too much 'order' and it's boring, too much 'disorder' and it's nonsensical. As such the more balanced, the more effectively complex a work is. Glitch (or at the very least the code that it's comprised of) is neither too 'ordered' or 'disorderd'. It is not consistently repeating the exact same information, nor is it giving out nonsensical information. It contains a balance of the two and produces a work that is visually interesting to the viewers.
 
+# Example c2.js
+
+
 
 
 

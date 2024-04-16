@@ -147,9 +147,40 @@ If Rafaël Rozendaal's work "Fatal to the Flesh" is a type of 'cute' that calls 
 </script>
 
 # Week 5 Homework
-*COULD NOT BE COMPLETED DUE TO BACK, SHOULDER, NECK, ARM AND WRIST PAIN (clearly my condition is worsening)
+Help.
 
-## Part 1
+SP unfortunately my laptop for whatever reason would not transfer the code over as a website currently so I'm doing this somewhat blind.
+
+## Part 1: Glitch
+So let's break up the code bit by bit as needed.
+
+```
+<canvas id="glitch_self_portrait"></canvas>
+```
+This sets up the canvas element. It is here that the rest of the code takes effect, showing the glitch effect.
+
+```
+const cnv = document.getElementById(`glitch_self_portrait`);
+cnv.width = cnv.parentNode.scrollWidth;
+cnv.height = cnv.width * 9 / 16;
+cnv.style.backgroundColor = `deeppink`;
+```
+This sets the width to match with that of the parent element, while the height is set to maintain the aspect ratio of 16:9 and the background is set to a deep pink colour.
+
+```
+const ctx = cnv.getContext(`2d`);
+```
+Enables images to be drawn on the canvas by obtaining the 2D rendering context (information needed to render) of the canvas.
+
+```
+let img_data
+```
+A variable declaration, though the value is undefined.
+
+```
+const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
+```
+Declares the function 'draw' and assigns it the parameter 'i'. The code to the right of the arrow determines that the image object is drawn onto the canvas starting from the top left corner ('0, 0' are the x and y coordinates) and cover the entire canvas area as determined by the canvas width and canvas height.
 
 
 

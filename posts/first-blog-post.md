@@ -146,9 +146,19 @@ If Rafaël Rozendaal's work "Fatal to the Flesh" is a type of 'cute' that calls 
     iframe.height = iframe.parentNode.scrollWidth + 42
 </script>
 
+# Week 5 Homework
+*COULD NOT BE COMPLETED DUE TO BACK, SHOULDER, NECK, ARM AND WRIST PAIN (clearly my condition is worsening)
+
+## Part 1
+
+
+
+
 
 # Extra stuff to know when writing:
 
 _underline_
 
 **bold**
+
+

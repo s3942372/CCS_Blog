@@ -182,6 +182,36 @@ const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
 ```
 Declares the function 'draw' and assigns it the parameter 'i'. The code to the right of the arrow determines that the image object is drawn onto the canvas starting from the top left corner ('0, 0' are the x and y coordinates) and cover the entire canvas area as determined by the canvas width and canvas height.
 
+```
+const img = new Image ()
+   img.onload = () => {
+      cnv.height = cnv.width * (img.height / img.width)
+      draw (img)
+      img_data = cnv.toDataURL ("image/jpeg")
+      add_glitch ()
+   }
+   img.src = `/240405/pfp_glasses.jpg`
+```
+Creates a new image object (source is set to a JPEG image file). The canvas height and width is adjusted to the aspect ratio of the newly loaded image and draws it onto the canvas. The canvas content is the converted to a base64 encoded JPEG image before a glitch effect is added through a function.
+
+```
+const rand_int = max => Math.floor (Math.random () * max)
+```
+A random integer is generated, with 'max' being the maximum value the integer can be.
+
+```
+const glitchify = (data, chunk_max, repeats) => {
+      const chunk_size = rand_int (chunk_max / 4) * 4
+      const i = rand_int (data.length - 24 - chunk_size) + 24
+      const front = data.slice (0, i)
+      const back = data.slice (i + chunk_size, data.length)
+      const result = front + back
+      return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
+   }
+```
+A glitch effect is generated through the manipulation of the image data. Random chunks of image data is removed from the image repeatedly based on the parameters given. The 2nd line ensures that the chunk size is a multiple of 4, while the 3rd line ensures that a chunk can be removed to make the glitch effect. In the 4th line, 'front' is the part of the image data where the glitch effect will be applied and in the 5th line 'back' is what follows. 6th line is the combination of the previous two and is used to create the glitch effect. The last line determines whether or not to continue to apply the glitch effect until the desired number of repeats has been reached.
+
+
 
 
 

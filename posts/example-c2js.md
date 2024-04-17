@@ -14,6 +14,8 @@ Code from [here](https://github.com/ren-yuan/c2.js/blob/main/examples/Delauney.j
 
 <script>
 
+console.dir(p5)
+
 //Created by Ren Yuan
 
 const renderer = new c2.Renderer(document.getElementById('c2'));

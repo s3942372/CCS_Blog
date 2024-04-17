@@ -2,12 +2,15 @@
 title: Example c2.js
 published_at: 2024-04-17
 snippet: class example
-disable_html_sanitization
+disable_html_sanitization: true
 ---
 
 <script src="/scripts/c2.min.js"></script>
+<script src="/scripts/p5.min.js"></script>
 
-<canvas id="c2">
+<canvas id="c2"></canvas>
+
+Code from [here](https://github.com/ren-yuan/c2.js/blob/main/examples/Delauney.js).
 
 <script>
 
@@ -102,5 +105,3 @@ function resize() {
 }
 
 </script>
-
-</canvas>

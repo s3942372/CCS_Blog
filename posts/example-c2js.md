@@ -1,7 +1,9 @@
+---
 title: Example c2.js
 published_at: 2024-04-17
 snippet: class example
 disable_html_sanitization
+---
 
 <script src="/scripts/c2.min.js"></script>
 

@@ -136,6 +136,59 @@ disable_html_sanitization: true
 
 </script>
 ```
+<canvas id="pixel_sort"></canvas>
+
+<script type="module">
+   import { PixelSorter } from "/script/pixel_sort.js"
+
+   const cnv  = document.getElementById (`pixel_sort`)
+   cnv.width  = cnv.parentNode.scrollWidth
+   cnv.height = cnv.width * 9 / 16   
+
+   const ctx = cnv.getContext (`2d`)
+   const sorter = new PixelSorter (ctx)
+
+   const img = new Image ()
+
+   img.onload = () => {
+      cnv.height = cnv.width * (img.height / img.width)
+      ctx.drawImage (img, 0, 0, cnv.width, cnv.height)
+      sorter.init ()
+      draw_frame ()
+   }
+
+   img.src = `/glitch_example/its_me.jpeg`
+
+   let frame_count = 0
+   const draw_frame = () => {
+
+      ctx.drawImage (img, 0, 0, cnv.width, cnv.height)
+
+      let sig = Math.cos (frame_count * 2 * Math.PI / 500)
+
+      const mid = {
+         x: cnv.width / 2,
+         y: cnv.height / 2
+      }
+
+      const dim = {
+         x: Math.floor ((sig + 3) * (cnv.width / 6)) + 1,
+         y: Math.floor ((sig + 1) * (cnv.height / 6)) + 1
+      }
+
+      const pos = {
+         x: Math.floor (mid.x - (dim.x / 2)),
+         y: Math.floor (mid.y - (dim.y / 2))
+      }
+
+      sorter.glitch (pos, dim)
+
+      frame_count++
+      requestAnimationFrame (draw_frame)
+   }
+
+</script>
+
 
 
 # Week 5 Homework
@@ -146,12 +199,12 @@ SP unfortunately my laptop for whatever reason would not transfer the code over 
 ## Part 1: Glitch
 So let's break up the code bit by bit as needed.
 
-```
+```html
 <canvas id="glitch_self_portrait"></canvas>
 ```
 This sets up the canvas element. It is here that the rest of the code takes effect, showing the glitch effect.
 
-```
+```html
 const cnv = document.getElementById(`glitch_self_portrait`);
 cnv.width = cnv.parentNode.scrollWidth;
 cnv.height = cnv.width * 9 / 16;
@@ -159,22 +212,22 @@ cnv.style.backgroundColor = `deeppink`;
 ```
 This sets the width to match with that of the parent element, while the height is set to maintain the aspect ratio of 16:9 and the background is set to a deep pink colour.
 
-```
+```html
 const ctx = cnv.getContext(`2d`);
 ```
 Enables images to be drawn on the canvas by obtaining the 2D rendering context (information needed to render) of the canvas.
 
-```
+```html
 let img_data
 ```
 A variable declaration, though the value is undefined.
 
-```
+```html
 const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
 ```
 Declares the function 'draw' and assigns it the parameter 'i'. The code to the right of the arrow determines that the image object is drawn onto the canvas starting from the top left corner ('0, 0' are the x and y coordinates) and cover the entire canvas area as determined by the canvas width and canvas height.
 
-```
+```html
 const img = new Image ()
 img.onload = () => {
     cnv.height = cnv.width * (img.height / img.width)
@@ -186,12 +239,12 @@ img.src = `/240405/pfp_glasses.jpg`
 ```
 Creates a new image object (source is set to a JPEG image file). The canvas height and width is adjusted to the aspect ratio of the newly loaded image and draws it onto the canvas. The canvas content is the converted to a base64 encoded JPEG image before a glitch effect is added through a function.
 
-```
+```html
 const rand_int = max => Math.floor (Math.random () * max)
 ```
 A random integer is generated, with 'max' being the maximum value the integer can be.
 
-```
+```html
 const glitchify = (data, chunk_max, repeats) => {
     const chunk_size = rand_int (chunk_max / 4) * 4
     const i = rand_int (data.length - 24 - chunk_size) + 24
@@ -203,12 +256,12 @@ const glitchify = (data, chunk_max, repeats) => {
 ```
 A glitch effect is generated through the manipulation of the image data. Random chunks of image data is removed from the image repeatedly based on the parameters given. The 2nd line ensures that the chunk size is a multiple of 4, while the 3rd line ensures that a chunk can be removed to make the glitch effect. In the 4th line, 'front' is the part of the image data where the glitch effect will be applied and in the 5th line 'back' is what follows. 6th line is the combination of the previous two and is used to create the glitch effect. The last line determines whether or not to continue to apply the glitch effect until the desired number of repeats has been reached.
 
-```
+```html
  const glitch_arr = []
 ```
 Stores the generated 'glitched' images  and adds to the array.
 
-```
+```html
 const add_glitch = () => {
     const i = new Image ()
     i.onload = () => {
@@ -221,13 +274,13 @@ const add_glitch = () => {
 ```
 Sets up the function 'add_glitch' which creates and loads the glitched images onto the canvas using 'draw_frame'.
 
-```
+```html
 let is_glitching = false
 let glitch_i = 0
 ```
 Tracks whether the glitch effect is currently active or not, and which glitched images should be displayed on the canvas.
 
-```
+```html
 const draw_frame = () => {
     if (is_glitching) draw (glitch_arr[glitch_i])
     else draw (img)

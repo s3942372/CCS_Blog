@@ -9,6 +9,8 @@ disable_html_sanitization
 
 <script>
 
+//Created by Ren Yuan
+
 const renderer = new c2.Renderer(document.getElementById('c2'));
 resize();
 

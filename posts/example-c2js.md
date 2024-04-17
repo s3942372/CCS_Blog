@@ -5,7 +5,7 @@ disable_html_sanitization
 
 <script src="/scripts/c2.min.js"></script>
 
-<canvas id="c2"/>
+<canvas id="c2">
 
 <script>
 
@@ -100,3 +100,5 @@ function resize() {
 }
 
 </script>
+
+</canvas>

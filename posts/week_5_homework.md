@@ -5,6 +5,9 @@ snippet: glitch example
 disable_html_sanitization: true
 ---
 
+
+# Glitch
+
 <canvas id="glitch_self_portrait"></canvas>
 
 <script type="module">
@@ -201,6 +204,108 @@ disable_html_sanitization: true
 </script>
 ```
 
+## Breaking it down a bit more
+
+```
+<canvas id="glitch_self_portrait"></canvas>
+```
+This sets up the canvas element. It is here that the rest of the code takes effect, showing the glitch effect.
+
+```
+const cnv = document.getElementById(`glitch_self_portrait`);
+cnv.width = cnv.parentNode.scrollWidth;
+cnv.height = cnv.width * 9 / 16;
+cnv.style.backgroundColor = `deeppink`;
+```
+This sets the width to match with that of the parent element, while the height is set to maintain the aspect ratio of 16:9 and the background is set to a deep pink colour.
+
+```
+const ctx = cnv.getContext(`2d`);
+```
+Enables images to be drawn on the canvas by obtaining the 2D rendering context (information needed to render) of the canvas.
+
+```
+let img_data
+```
+A variable declaration, though the value is undefined.
+
+```
+const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
+```
+Declares the function 'draw' and assigns it the parameter 'i'. The code to the right of the arrow determines that the image object is drawn onto the canvas starting from the top left corner ('0, 0' are the x and y coordinates) and cover the entire canvas area as determined by the canvas width and canvas height.
+
+```
+const img = new Image ()
+img.onload = () => {
+    cnv.height = cnv.width * (img.height / img.width)
+    draw (img)
+    img_data = cnv.toDataURL ("image/jpeg")
+    add_glitch ()
+}
+img.src = `/240405/pfp_glasses.jpg`
+```
+Creates a new image object (source is set to a JPEG image file). The canvas height and width is adjusted to the aspect ratio of the newly loaded image and draws it onto the canvas. The canvas content is the converted to a base64 encoded JPEG image before a glitch effect is added through a function.
+
+```
+const rand_int = max => Math.floor (Math.random () * max)
+```
+A random integer is generated, with 'max' being the maximum value the integer can be.
+
+```
+const glitchify = (data, chunk_max, repeats) => {
+    const chunk_size = rand_int (chunk_max / 4) * 4
+    const i = rand_int (data.length - 24 - chunk_size) + 24
+    const front = data.slice (0, i)
+    const back = data.slice (i + chunk_size, data.length)
+    const result = front + back
+    return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
+}
+```
+A glitch effect is generated through the manipulation of the image data. Random chunks of image data is removed from the image repeatedly based on the parameters given. The 2nd line ensures that the chunk size is a multiple of 4, while the 3rd line ensures that a chunk can be removed to make the glitch effect. In the 4th line, 'front' is the part of the image data where the glitch effect will be applied and in the 5th line 'back' is what follows. 6th line is the combination of the previous two and is used to create the glitch effect. The last line determines whether or not to continue to apply the glitch effect until the desired number of repeats has been reached.
+
+```
+ const glitch_arr = []
+```
+Stores the generated 'glitched' images  and adds to the array.
+
+```
+const add_glitch = () => {
+    const i = new Image ()
+    i.onload = () => {
+        glitch_arr.push (i)
+        if (glitch_arr.length < 12) add_glitch ()
+        else draw_frame ()
+    }
+    i.src = glitchify (img_data, 96, 6)
+}
+```
+Sets up the function 'add_glitch' which creates and loads the glitched images onto the canvas using 'draw_frame'.
+
+```
+let is_glitching = false
+let glitch_i = 0
+```
+Tracks whether the glitch effect is currently active or not, and which glitched images should be displayed on the canvas.
+
+```
+const draw_frame = () => {
+    if (is_glitching) draw (glitch_arr[glitch_i])
+    else draw (img)
+
+    const prob = is_glitching ? 0.05 : 0.02
+    if (Math.random () < prob) {
+        glitch_i = rand_int (glitch_arr.length)
+        is_glitching = !is_glitching
+    }
+
+    requestAnimationFrame (draw_frame)
+}
+```
+Frames are repeatedly rendered on the canvas in a loop. If 'is_glitching' is set to 'true' then the glitched images from the array is displayed on the canvas and the probability of the glitch effect occuring is set to '0.05'. If it's set to 'false' then the original image is drawn on the canvas and the probability of the glitch effect occuring is set to '0.02'. A random number is then generated and if it is less than the probability the glitch effect is triggered. 'is_glitching' is then toggled to become the opposite; 'true' becomes 'false' and vice versa. Finally the last line creates a loop that repeatedly renders the frames on the canvas, making it appear as if the glitch is constantly happening.
+
+
+# Pixel Sort
+
 <canvas id="pixel_sort"></canvas>
 
 <script type="module">
@@ -387,115 +492,7 @@ const quicksort = a => {
  }
 ```
 
-
-# Week 5 Homework
-Help.
-
-SP unfortunately my laptop for whatever reason would not transfer the code over as a website currently so I'm doing this somewhat blind.
-
-## Part 1: Glitch
-So let's break up the code bit by bit as needed.
-
-```html
-<canvas id="glitch_self_portrait"></canvas>
-```
-This sets up the canvas element. It is here that the rest of the code takes effect, showing the glitch effect.
-
-```
-const cnv = document.getElementById(`glitch_self_portrait`);
-cnv.width = cnv.parentNode.scrollWidth;
-cnv.height = cnv.width * 9 / 16;
-cnv.style.backgroundColor = `deeppink`;
-```
-This sets the width to match with that of the parent element, while the height is set to maintain the aspect ratio of 16:9 and the background is set to a deep pink colour.
-
-```
-const ctx = cnv.getContext(`2d`);
-```
-Enables images to be drawn on the canvas by obtaining the 2D rendering context (information needed to render) of the canvas.
-
-```
-let img_data
-```
-A variable declaration, though the value is undefined.
-
-```
-const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
-```
-Declares the function 'draw' and assigns it the parameter 'i'. The code to the right of the arrow determines that the image object is drawn onto the canvas starting from the top left corner ('0, 0' are the x and y coordinates) and cover the entire canvas area as determined by the canvas width and canvas height.
-
-```
-const img = new Image ()
-img.onload = () => {
-    cnv.height = cnv.width * (img.height / img.width)
-    draw (img)
-    img_data = cnv.toDataURL ("image/jpeg")
-    add_glitch ()
-}
-img.src = `/240405/pfp_glasses.jpg`
-```
-Creates a new image object (source is set to a JPEG image file). The canvas height and width is adjusted to the aspect ratio of the newly loaded image and draws it onto the canvas. The canvas content is the converted to a base64 encoded JPEG image before a glitch effect is added through a function.
-
-```
-const rand_int = max => Math.floor (Math.random () * max)
-```
-A random integer is generated, with 'max' being the maximum value the integer can be.
-
-```
-const glitchify = (data, chunk_max, repeats) => {
-    const chunk_size = rand_int (chunk_max / 4) * 4
-    const i = rand_int (data.length - 24 - chunk_size) + 24
-    const front = data.slice (0, i)
-    const back = data.slice (i + chunk_size, data.length)
-    const result = front + back
-    return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
-}
-```
-A glitch effect is generated through the manipulation of the image data. Random chunks of image data is removed from the image repeatedly based on the parameters given. The 2nd line ensures that the chunk size is a multiple of 4, while the 3rd line ensures that a chunk can be removed to make the glitch effect. In the 4th line, 'front' is the part of the image data where the glitch effect will be applied and in the 5th line 'back' is what follows. 6th line is the combination of the previous two and is used to create the glitch effect. The last line determines whether or not to continue to apply the glitch effect until the desired number of repeats has been reached.
-
-```
- const glitch_arr = []
-```
-Stores the generated 'glitched' images  and adds to the array.
-
-```
-const add_glitch = () => {
-    const i = new Image ()
-    i.onload = () => {
-        glitch_arr.push (i)
-        if (glitch_arr.length < 12) add_glitch ()
-        else draw_frame ()
-    }
-    i.src = glitchify (img_data, 96, 6)
-}
-```
-Sets up the function 'add_glitch' which creates and loads the glitched images onto the canvas using 'draw_frame'.
-
-```
-let is_glitching = false
-let glitch_i = 0
-```
-Tracks whether the glitch effect is currently active or not, and which glitched images should be displayed on the canvas.
-
-```
-const draw_frame = () => {
-    if (is_glitching) draw (glitch_arr[glitch_i])
-    else draw (img)
-
-    const prob = is_glitching ? 0.05 : 0.02
-    if (Math.random () < prob) {
-        glitch_i = rand_int (glitch_arr.length)
-        is_glitching = !is_glitching
-    }
-
-    requestAnimationFrame (draw_frame)
-}
-```
-Frames are repeatedly rendered on the canvas in a loop. If 'is_glitching' is set to 'true' then the glitched images from the array is displayed on the canvas and the probability of the glitch effect occuring is set to '0.05'. If it's set to 'false' then the original image is drawn on the canvas and the probability of the glitch effect occuring is set to '0.02'. A random number is then generated and if it is less than the probability the glitch effect is triggered. 'is_glitching' is then toggled to become the opposite; 'true' becomes 'false' and vice versa. Finally the last line creates a loop that repeatedly renders the frames on the canvas, making it appear as if the glitch is constantly happening.
-
-## Part 2: Pixel Sort
-
-## Part 4: Readings
+# Readings
 I.
 Glitch belongs most to Sianne Ngai's aesthetic category of 'interesting'. 'Interesting', to Ngai, is "some variation from a norm". 'Interesting' shifts, between "the familiar and the unfamiliar, identity and difference, continuity and break", and yet its variation can be big and small.
 

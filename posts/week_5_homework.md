@@ -93,7 +93,7 @@ disable_html_sanitization: true
       img_data = cnv.toDataURL ("image/jpeg")
       add_glitch ()
    }
-   img.src = `/glitch_example/its_me.jpeg`
+   img.src = `/week_5/its_me.jpeg`
 
    const rand_int = max => Math.floor (Math.random () * max)
 
@@ -157,7 +157,7 @@ disable_html_sanitization: true
       draw_frame ()
    }
 
-   img.src = `/glitch_example/its_me.jpeg`
+   img.src = `/week_5/young_me.jpeg`
 
    let frame_count = 0
    const draw_frame = () => {

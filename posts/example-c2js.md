@@ -5,8 +5,8 @@ snippet: class example
 disable_html_sanitization: true
 ---
 
-<script src="/scripts/c2.min.js"></script>
-<script src="/scripts/p5.min.js"></script>
+<script src="/script/c2.min.js"></script>
+<script src="/script/p5.min.js"></script>
 
 <canvas id="c2"></canvas>
 

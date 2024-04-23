@@ -1,34 +1,8 @@
----
-title: Week 6 Homework
-published_at: 2024-04-22
-snippet: 3D examples
-disable_html_sanitization: true
----
+// https://discourse.threejs.org/t/how-to-create-a-segmented-tube/51229
 
-# Tunnel
-
-<!DOCTYPE html>
-<!-- https://discourse.threejs.org/t/how-to-create-a-segmented-tube/51229/2 -->
-<!-- https://codepen.io/boytchev/pen/poxpGZN --> 
-<head>
-  <title>ExtrudedTubeWithHoles</title>
-  <meta charset="utf-8" />
-<style>
-    body{
-    overflow: hidden;
-    margin: 0;
-    text-align: center;
-    }
-  </style>
-</head>
-<body> </body>
-
-<script type="module">
-
-// @author PavelBoytchev
-
-import { THREE } from 'https://unpkg.com/browse/three@0.149.0/';
+import * as THREE from "three";
 import { ParametricGeometry } from 'https://unpkg.com/browse/three@0.149.0/examples/jsm/';
+
 
 // general setup of environment
 
@@ -76,7 +50,7 @@ function trajectory ( u, target )
 
 // texture
 
-var map = new THREE.TextureLoader().load( 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAACCAMAAAAOwC77AAAABlBMVEUAAAD/1iGA9P/lAAAAEElEQVQIW2NkQAOMBPgYAgAA5gAF95+gaQAAAABJRU5ErkJggg==' );
+var map = new THREE.TextureLoader().load( 'data:ExtrudedTubeWithHoles.png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAACCAMAAAAOwC77AAAABlBMVEUAAAD/1iGA9P/lAAAAEElEQVQIW2NkQAOMBPgYAgAA5gAF95+gaQAAAABJRU5ErkJggg==' );
 		map.repeat.set( 200, 1 );
 		map.wrapS = THREE.RepeatWrapping;
 
@@ -155,6 +129,3 @@ function animationLoop( t )
 		light.position.copy( camera.position );
     renderer.render( scene, camera );
 }
-
-</script>
-</html>

@@ -8,18 +8,11 @@ disable_html_sanitization: true
 
 <!-- https://discourse.threejs.org/t/is-it-possible-to-make-a-3d-wall-visible-only-from-one-side-in-three-js/57521/7 -->
 <!-- https://codepen.io/boytchev/pen/xxMZzJx -->
-<head>
-  <title>WallVisibility</title>
-  <meta charset="utf-8" />
- <style>
-    body{
-    overflow: hidden;
-    margin: 0;
-    }
-  </style>
-</head>
-<body> </body>
+
+<canvas id="Wall_Visibility"></canvas>
+
 <script type="module">
+
 
 // @author PavelBoytchev
 

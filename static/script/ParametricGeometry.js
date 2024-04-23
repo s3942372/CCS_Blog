@@ -7,7 +7,7 @@ import {
 	BufferGeometry,
 	Float32BufferAttribute,
 	Vector3
-} from 'three';
+} from 'https://unpkg.com/browse/three@0.149.0/examples/jsm/';
 
 class ParametricGeometry extends BufferGeometry {
 

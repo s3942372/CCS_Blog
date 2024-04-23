@@ -7,10 +7,10 @@ disable_html_sanitization: true
 
 # Tunnel
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <!-- https://discourse.threejs.org/t/how-to-create-a-segmented-tube/51229/2 -->
 <!-- https://codepen.io/boytchev/pen/poxpGZN --> 
-<head>
+<!-- <head>
   <title>ExtrudedTubeWithHoles</title>
   <meta charset="utf-8" />
 <style>
@@ -21,14 +21,17 @@ disable_html_sanitization: true
     }
   </style>
 </head>
-<body> </body>
+<body> </body> -->
+
+<canvas id="Tunnel"></canvas>
 
 <script type="module">
 
 // @author PavelBoytchev
 
-import { THREE } from 'https://unpkg.com/browse/three@0.149.0/';
-import { ParametricGeometry } from 'https://unpkg.com/browse/three@0.149.0/examples/jsm/';
+import { three } from '/script/three.min.js';
+import * as THREE from "three";
+import { ParametricGeometry } from '/script/ParametricGeometry.js';
 
 // general setup of environment
 

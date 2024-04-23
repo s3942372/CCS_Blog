@@ -168,7 +168,7 @@ function animationLoop( t )
 
 # Part 2: Analyser
 
-## At least this part is doable.
+## At least this one is doable.
 
 <script src="/script/c2.min.js"></script>
 <script src="/script/p5.min.js"></script>

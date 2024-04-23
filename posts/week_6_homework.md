@@ -6,9 +6,9 @@ disable_html_sanitization: true
 ---
 
 
-# Tunnel
+# Part 1: Tunnel
 
-# I give up on this one.
+## I give up on this one.
 
 <!-- <!DOCTYPE html>
 <!-- https://discourse.threejs.org/t/how-to-create-a-segmented-tube/51229/2 -->
@@ -166,7 +166,9 @@ function animationLoop( t )
 </html>
 
 
-# Analyser
+# Part 2: Analyser
+
+## At least this part is doable.
 
 <script src="/script/c2.min.js"></script>
 <script src="/script/p5.min.js"></script>

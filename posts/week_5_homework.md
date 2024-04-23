@@ -1,7 +1,7 @@
 ---
 title: Week 5 Homework
 published_at: 2024-04-16
-snippet: glitch example
+snippet: Glitch example
 disable_html_sanitization: true
 ---
 

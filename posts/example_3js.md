@@ -10,8 +10,6 @@ disable_html_sanitization: true
 
 Code heavily inspired by [this codepen](https://codepen.io/prisoner849/pen/ExpLBEO?editors=1010).
 
-<div id="three_container>
-
 <div id="three_container"></div>
 
 <script type="module">

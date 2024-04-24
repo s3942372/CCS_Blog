@@ -8,41 +8,21 @@ disable_html_sanitization: true
 
 # Part 1: Tunnel
 
-## I give up on this one.
+<div id="wall_invisibility"></div>
 
-<!-- <!DOCTYPE html>
-<!-- https://discourse.threejs.org/t/how-to-create-a-segmented-tube/51229/2 -->
-<!-- https://codepen.io/boytchev/pen/poxpGZN --> 
-<!-- <head>
-  <title>ExtrudedTubeWithHoles</title>
-  <meta charset="utf-8" />
-<style>
-    body{
-    overflow: hidden;
-    margin: 0;
-    text-align: center;
-    }
-  </style>
-</head>
-<body> </body> -->
-
-<canvas id="Tunnel"></canvas>
+Code heavily inspired by [this codepen](https://codepen.io/boytchev/pen/xxMZzJx).
 
 <script type="module">
+   import * as THREE from "/script/threejs/three.js"
+   import { OrbitControls } from "/script/threejs/OrbitControls.js"
 
-// @author PavelBoytchev
-
-import { three } from '/script/three.min.js';
-import * as THREE from "three";
-import { ParametricGeometry } from '/script/ParametricGeometry.js';
-
-// general setup of environment
+   console.clear( );
 
 var scene = new THREE.Scene();
     scene.background = new THREE.Color( 'gainsboro' );
 
 var camera = new THREE.PerspectiveCamera( 30, innerWidth/innerHeight );
-    camera.position.set( 0, 20, 40 );
+    camera.position.set( 0, 0, 7 );
     camera.lookAt( scene.position );
 
 var renderer = new THREE.WebGLRenderer( {antialias: true} );
@@ -56,124 +36,125 @@ window.addEventListener( "resize", (event) => {
     renderer.setSize( innerWidth, innerHeight );
 });
 
-var hemisphereLight = new THREE.HemisphereLight( 'crimson', 'yellow', 0.3 );
-    scene.add( hemisphereLight );
+var controls = new OrbitControls( camera, renderer.domElement );
+    controls.enableDamping = true;
 
-var light = new THREE.PointLight( 'white', 0.7 );
+var light = new THREE.DirectionalLight( 'white', 3 );
+    light.position.set( 1, 1, 1 );
     scene.add( light );
 
 
+class Platon extends THREE.Mesh
+{
+	constructor( radius, level )
+	{
+		// main shape
+		super(
+			new THREE.TetrahedronGeometry( 1, 1 ),
+			new THREE.MeshStandardMaterial( {
+				color: new THREE.Color(2, 1, 0),
+				metalness: 0.47,
+				roughness: 0.53,
+				flatShading: true
+			} )
+		);
+
+		// first subshape
+		var platon1 = new THREE.Mesh(
+				new THREE.TetrahedronGeometry( 1, 3 ),
+				new THREE.MeshStandardMaterial( {
+						color: new THREE.Color(2, 2, 2),
+						metalness: 0.47,
+						roughness: 0.53,
+						flatShading: true
+				} )
+			 );
+			platon1.scale.setScalar( 0.809 );
+	
+		// second subshape
+		var platon2 = new THREE.Mesh(
+				new THREE.OctahedronGeometry( 1, 4 ),
+				new THREE.MeshStandardMaterial( {
+						color: new THREE.Color(0.5, 0, 0),
+						metalness: 0.47,
+						roughness: 0.53,
+						flatShading: true
+				} )
+			 );
+			platon2.scale.setScalar( 0.709 );
+	
+		this.add( platon1, platon2 );
+	} // Platon.constructor
+} // Platon
+
+
+var platon = new Platon();
+		platon.scale.setScalar( 0.75 );
+		scene.add( platon );
+
 // next comment
 
+var geometry = new THREE.BoxGeometry( 1.8, 1.8, 0.1 ),
+		material = new THREE.MeshLambertMaterial( {color:'royalblue', transparent: true} );
 
-// a curve for the tube trajectory
+var wall1 = new THREE.Mesh( geometry, material.clone() );
+		wall1.position.z = 1;
 
-function trajectory ( u, target )
-{
-		u *= 2*Math.PI;
-				
-		target.set( 
-				5*Math.sin(2*u) - 4*Math.cos(1*u), 
-				1*Math.sin(7*u) + 2*Math.sin(4*u), 
-				11*Math.cos(1*u) + 4*Math.sin(2*u)
-		);
-}
+var wall2 = new THREE.Mesh( geometry, material.clone() );
+		wall2.rotation.y = Math.PI;		
+		wall2.position.z = -1;
 
+var wall3 = new THREE.Mesh( geometry, material.clone() );
+		wall3.rotation.y = Math.PI/2;		
+		wall3.position.x = 1;
 
-// texture
+var wall4 = new THREE.Mesh( geometry, material.clone() );
+		wall4.rotation.y = -Math.PI/2;		
+		wall4.position.x = -1;
 
-var map = new THREE.TextureLoader().load( 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAACCAMAAAAOwC77AAAABlBMVEUAAAD/1iGA9P/lAAAAEElEQVQIW2NkQAOMBPgYAgAA5gAF95+gaQAAAABJRU5ErkJggg==' );
-		map.repeat.set( 200, 1 );
-		map.wrapS = THREE.RepeatWrapping;
+var wall5 = new THREE.Mesh( geometry, material.clone() );
+		wall5.rotation.x = Math.PI/2;		
+		wall5.position.y = -1;
 
+var wall6 = new THREE.Mesh( geometry, material.clone() );
+		wall6.rotation.x = -Math.PI/2;		
+		wall6.position.y = 1;
 
-// building the tube
+var walls = [wall1, wall2, wall3, wall4, wall5, wall6];
 
-
-
-// a function that generates a function for a circular
-// segment from angle FROM to angle TO (in degrees)
-
-var normal = new THREE.Vector3(),
-		tangent = new THREE.Vector3();
-
-function arcPoint( from, to, radius=1 )
-{
-	return function ( u, v, target )
-	{
-			trajectory( u, target );
-			trajectory( u+0.001, tangent );
-	
-			tangent.sub( target );
-			normal.set( -tangent.z, 0, tangent.x );
-			normal.normalize( );
-
-			v = THREE.MathUtils.mapLinear( v, 0, 1, Math.PI*from/180, Math.PI*to/180 );
-			target.addScaledVector( normal, radius*Math.cos(v) );
-			target.y += radius*Math.sin(v);
-	}
-}
+		scene.add( ...walls );
 
 
-// generate 4 segments of the tube
-
-// the floor of the tube has precision 1, so it is drawn as a flat surface
-var floor = new THREE.Mesh(
-				new ParametricGeometry( arcPoint(230,310), 500, 1 ),
-				new THREE.MeshLambertMaterial( {side: THREE.DoubleSide, map: map})
-		);
-
-
-// left wall is from 140 to 220 degrees
-var wallLeft = new THREE.Mesh(
-				new ParametricGeometry( arcPoint(140,220), 500, 15 ),
-				new THREE.MeshLambertMaterial( {side: THREE.DoubleSide, map: map})
-		);
-
-
-// right wall is from -40 to 40 degrees
-var wallRight = new THREE.Mesh(
-				new ParametricGeometry( arcPoint(-40,40), 500, 15 ),
-				new THREE.MeshLambertMaterial( {side: THREE.DoubleSide, map: map})
-		);
-
-// ceiling is from 50 to 130 degrees
-var ceiling = new THREE.Mesh(
-				new ParametricGeometry( arcPoint(50,130), 500, 15 ),
-				new THREE.MeshLambertMaterial( {side: THREE.DoubleSide, map: map})
-		);
-
-			
-scene.add( floor, wallLeft, wallRight, ceiling );
-
-
-
-// animation loop
+var v = new THREE.Vector3( ),
+		u = new THREE.Vector3( );
 
 function animationLoop( t )
-{  
-		// move the camera long the tube
-		trajectory( t/20000, camera.position );
-		trajectory( t/20000+0.05, tangent );
-		tangent.y -= 0.2;
-		camera.lookAt( tangent );
+{
+		platon.rotation.set( t/600, t/700, t/800 );
+    controls.update( );
+
+		for( var wall of walls )
+		{
+				wall.getWorldDirection( v );
+				camera.getWorldDirection( u );
+			
+				wall.material.opacity = 2*v.dot(u); 		// soft
+				//wall.visible = v.dot(u) > 0; 					// hard
+		}
 	
 		light.position.copy( camera.position );
     renderer.render( scene, camera );
 }
 
 </script>
-</html>
 
 
 # Part 2: Analyser
 
-## At least this one is doable.
+<div id="Sound"></div>
 
 <script src="/script/c2.min.js"></script>
 <script src="/script/p5.min.js"></script>
-
-<canvas id="c2"></canvas>
 
 Code from [here](https://github.com/ren-yuan/c2.js/blob/main/examples/Analyser.js).
 

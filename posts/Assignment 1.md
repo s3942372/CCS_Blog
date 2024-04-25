@@ -1,5 +1,5 @@
 ---
-title: Creative Coding Assignment 1
+title: Assignment 1
 published_at: 2024-04-05
 snippet: Assignment 1 submission
 disable_html_sanitization: true

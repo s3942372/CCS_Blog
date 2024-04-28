@@ -30,7 +30,7 @@ disable_html_sanitization: true
         img_data = cnv.toDataURL ("image/jpeg")
         add_glitch ()
     }
-    img.src = `/week_5/its_me.jpeg`
+    img.src = `/week_5/beach.jpg`
 
     const rand_int = max => Math.floor (Math.random () * max)
 
@@ -117,7 +117,7 @@ disable_html_sanitization: true
     }
 
     // give filepath to image element
-    img.src = `/week_5/its_me.jpeg`
+    img.src = `/week_5/beach.jpg`
 
     // define a function that returns a random value between 0 - max
     const rand_int = max => Math.floor (Math.random () * max)
@@ -327,7 +327,7 @@ Frames are repeatedly rendered on the canvas in a loop. If 'is_glitching' is set
       draw_frame ()
    }
 
-   img.src = `/week_5/young_me.jpeg`
+   img.src = `/week_5/church.jpg`
 
    let frame_count = 0
    const draw_frame = () => {
@@ -383,7 +383,7 @@ Frames are repeatedly rendered on the canvas in a loop. If 'is_glitching' is set
       draw_frame ()
    }
 
-   img.src = `/week_5/young_me.jpeg`
+   img.src = `/week_5/church.jpg`
 
    let frame_count = 0
    const draw_frame = () => {

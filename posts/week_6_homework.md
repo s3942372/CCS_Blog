@@ -6,7 +6,7 @@ disable_html_sanitization: true
 ---
 
 
-# Part 1: Tunnel
+# Part 1: Wall Invisibility
 
 <div id="wall_invisibility"></div>
 

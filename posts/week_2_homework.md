@@ -7,7 +7,7 @@ disable_html_sanitization: true
 
 
 # Week 2 Homework
-*COULD NOT BE COMPLETED DUE TO WRIST PAIN
+*COULD NOT BE COMPLETED DUE TO WRIST PAIN.
 
 ## Part 1
 

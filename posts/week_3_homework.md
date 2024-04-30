@@ -7,7 +7,7 @@ disable_html_sanitization: true
 
 
 # Week 3 Homework
-*COULD NOT BE COMPLETED DUE TO BACK, SHOULDER, NECK, ARM AND WRIST PAIN (clearly my condition is worsening)
+*COULD NOT BE COMPLETED DUE TO BACK, SHOULDER, NECK, ARM AND WRIST PAIN (clearly my condition is worsening).
 
 ## Part 1
 

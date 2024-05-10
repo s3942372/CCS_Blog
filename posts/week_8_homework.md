@@ -17,4 +17,4 @@ I responded to Yehwan Song and their work ["Sound Interactive Poster"](https://w
 Everything else added was a result of me getting carried away asking myself how I could make the project even more chaotic.
 
 # Techniques
-Glitch and post-digital practices (sound/microphone).
+Glitch and post-digital practices (sound/microphone). I took elements of the week 5 task as well as microphone elements and combined it all into one giant mess.

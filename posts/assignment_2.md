@@ -228,4 +228,4 @@ I had made the button so long so as to ensure that the viewers don't have to scr
 This alongside the random lyrics and the other visual effects made for what I believe to be a very zany and chaotic piece of net art.
 ![Never Ending, It Is](/assignment_2/a2p8.png)
 
-Like so, you see the final result of my project. If I had more time, will, and am not bogged down by the assignment of my other classes, I would like to add to the piece where alongside the random languages, the button also has random colours and fonts triggered each time by the button press and/or sound the microphone picks up. Alas, I have not done this. Perhaps another day, another time.
+Like so, you see the final result of my project. If I had more time, will, and am not bogged down by the assignment of my other classes, I would like to add to the piece where alongside the random languages, the button also has random colours and fonts triggered each time by the button press and/or sound the microphone picks up. Alas, I have not done this, and from the amount of times my laptop has had issues the past two weeks I'd rather not push my luck. Perhaps another day, another time.

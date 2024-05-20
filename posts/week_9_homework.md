@@ -22,7 +22,14 @@ Lauren Lee McCarthy's work 'I heard TALKING IS DANGEROUS' is something that is v
 3. Existing repertoire
 4. How you might broker some creative coding repertoire to this new context
 
+Idea 1:
 - Pair a friend??? Kinda like Omegle.
 - Input in the topics you like/are interested in.
 - Wassat? Like stuff already in the field? Omegle.
--s ohhhhhhhhhhhhh. Not stuff already in the field. Ok, gotta find a way to randomly pair two different people/devices together and have either microphone and sound input and output or a way for texts to reach each other. Gonna be anonymous too, cause since online stalking/doxxing is such a big issue now. Uh, people are paired at random too, so you (almost) never get the same person twice, unless your luck is very, very good.
+- ohhhhhhhhhhhhh. Not stuff already in the field. Ok, gotta find a way to randomly pair two different people/devices together and have either microphone and sound input and output or a way for texts to reach each other. Gonna be anonymous too, cause since online stalking/doxxing is such a big issue now. Uh, people are paired at random too, so you (almost) never get the same person twice, unless your luck is very, very good.
+
+Idea 2:
+- Virtual pet simulator
+- Raise a virtual pet of some sort (aquarium, dog, cat, hamster, one of those things that mess around your screen)
+- Tomadatchis (is there a computer version?)
+- ANIMATION NOOOOOOOOOOO........ click and drag?????

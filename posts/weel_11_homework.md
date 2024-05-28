@@ -19,6 +19,8 @@ I can get motion sickness from watching the screen of a device. Sometimes it get
 
 Instead  of a hypnotism piece, it became a form of torture that probably violates some convention or rule of war somewhere (Geneva maybe?). I made the audio both high and droning because those noises tend to inflict the most damage (psychological tests have shown that being exposed to high pitched noises can affect people negatively) as well as weirdly creepy because clearly at this point everything I mmake becomes a form of horror for some reason. I also added a echoing beep of sorts that occurs every once in a while because of classical conditioning :). All in all I feel that we made quite a successful method of torture. Just sit someone in front of this piece for a few hours (or days) and they'll definitely spill all their secrets no questions asked.
 
+(Actually having watched our work again for 5 minutes (migraines and dizziness be damned) I have come to the conclusion that actually it's a pretty effective form of brainwashing too)
+
 ## What was Frustrating
 What was frustrating was 2 things:
 1. constant disconnections because of spooty wifi or some other reason I had not figured out.

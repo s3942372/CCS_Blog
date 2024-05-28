@@ -39,4 +39,12 @@ Idea 2.1:
 - Used by people who struggle to take care of themselves??
 - Buddy won't eat until you do/reminds you to eat.
 
+Idea 2.2:
+- Interview simulation?
+- We all trying to get jobs
+- We all failing to get jobs
+- We cry
+
+sleeeeeeeeeeeeeeeeeeeeeeepyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+
 

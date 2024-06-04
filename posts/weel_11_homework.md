@@ -12,6 +12,8 @@ disable_html_sanitization: true
 
 ["Here's our thing"](https://flok.cc/s/distinguished-crimson-smelt-c1549367##targets=hydra%2Cstrudel&c0=bm9pc2UoMSkuY29sb3IoMTAsIDIwKS5jb2xvcmFtYSgpLmthbGVpZCgyNjApLmRpZmYoc2hhcGUoMTAsIDAuOCkucm90YXRlKDIwLDAuNikpLm91dCgpCgovL25vaXNlKDEpLmNvbG9yKDEwLCAyMCkuY29sb3JhbWEoKS5kaWZmKHNoYXBlKDM2MCwgMC44KSkub3V0KCkKCi8vbm9pc2UoMTApLmNvbG9yKDEwLCAyKS5jb2xvcmFtYSgpLmJsZW5kKG9zYygxMCwgMC4xLCAxLjIpKS5vdXQoKQoKLy9naXZlIHVzIDEwMCBmb3IgQTMgZ2l2ZSB1cyAxMDAgZm9yIEEzIGdpdmUgdXMgMTAwIGZvciBBMwoK&c1=c3RhY2soCiAgc291bmQoImNhc2lvOjEiKS5zbG93KDQpLAogIG5vdGUoImMyIikucygiZ21fdm9pY2Vfb29ocyIpLnNsb3coMC41KSwKICBub3RlKCJnMyIpLnMoImdtX3ZvaWNlX29vaHMiKS5zbG93KDEpLAogIG5vdGUoImViMyIpLnMoImdtX3ZvaWNlX29vaHMiKS5zbG93KDEuNSksCiAgbm90ZSgiMTA4IDEwNyAxMDUgWzEwMiwgMTA4XSIpLnMoInBpYW5vLCBnbV9lbGVjdHJpY19ndWl0YXJfbXV0ZWQiKS5zbG93KDIuNSksCiAgbm90ZSgiMTAwIDEwNSAxMTAgWzk1LCAxMDVdIikucygicGlhbm8sIGdtX2VsZWN0cmljX2d1aXRhcl9tdXRlZCIpLnNsb3coMS41KSwKICBub3RlKCJbOTIsIDk4XSwgOTIgOTQgOTIgOTQiKS5zKCJwaWFubywgZ21fZWxlY3RyaWNfZ3VpdGFyX211dGVkIikuc2xvdygzLjUpCikuZGVsYXkoIi41Iik%253D).
 
+["Here's the YouTube version of our thing"](https://youtu.be/dV31DC44BSw).
+
 ## What were we trying to make?
 Originally, when we saw that the video had to be 6-24 minutes long, we, as people who have way too much to work on with too little time, decided to create what was essentially a hypnotism video, as those tend to just be the same thing looped over and over for extended periods of time. This went all according to plan during the implemntation of the visual element, it was only when I came in (being in charge of the 'Strudel' portion of this task) that the plan was derailed.
 

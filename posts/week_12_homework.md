@@ -26,6 +26,18 @@ Adding onto this classmate, who in later years I've seen handle similar situatio
 
 In what way can this simulator be expanded on? Well, it doesn't just have to be a simulator for interviews. People can have fun and take the base code and make it a simulator for all kinds of things. If we take it further, we can even potentially improve it to a point where it can help train people who find it hard to communicate with others with speaking. I feel that it can be a softer, safer way for some who have avoided others and locked themselves in their rooms for years, however I'm probably not the best person to speaking on this since I have the privilege of never finding communication difficult. I'm also speaking from a rather optimistic perspective; perhaps some may find it helpful, others not so much.
 
+## My Plan
+
+My plan was to, as stated before, create a simulator that can help people practice for their job interviews.
+
+## What Actually Happened
+
+Other than having to scrap my initial idea of a pet simulator, everything went alright.
+
+## What Was Interesting About the Experience
+
+How fast everything can break down and not go well and just generally make you want to curl up in a corner when the only person available for filming is only available for one day and had to film before you've completed your final website (Thanks though, Melinda, couldn't have done it without you).
+
 ## Now, The Code
 
 ```html

@@ -14,6 +14,8 @@ Here is where I shall put any and all discussion about the work, just in case it
 
 Also in case you're wondering why I didn't include some of the features in the video, it's because my friend could only film on a day before I had finished the final version and had to fly back to China.
 
+I tried to make the video interesting, but I also have 3 other assignments due... sorry... ORZ
+
 ## Community of Practice
 
 The Community of Practice (CoP) of this piece is a somewhat broad one, but in general I would say that it is students in their 3rd year of their bachelor's degrees - the ones who will soon go on intership and enter the workforce - and are socially avoidant. That is, they have trouble speaking with and are painfully shy around strangers. I have several friends who arre like this, and being an introvert who have no difficulties being loud and the center of attention (tooting my own horn here), I feel that something that could at least somewhat help them practice interacting with others (especially for something important like an interview) would help a bit. This is also coming from my experience during primary school when the vice principal came to interview both me and a classmate about why we wanted to join their private secondary girl's school and we spent the entire interview with just me answering the vice principal's questions and my classmate quietly crying out of what I presumed to be nerves off to the side. The vice principal did not acknowledge her, and I feel that maybe something like that could have been avoided if my classmate at least knew how to answer the questions, or had practice backing her and so she could default to those if she was nervous. 

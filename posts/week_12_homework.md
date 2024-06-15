@@ -12,6 +12,8 @@ For Assignment 3, we were to respond to Lauren Lee McCarthy's work ["I heard TAL
 
 Here is where I shall put any and all discussion about the work, just in case it isn't apparent in the video.
 
+Also in case you're wondering why I didn't include some of the features in the video, it's because my friend could only film on a day before I had finished the final version and had to fly back to China.
+
 ## Community of Practice
 
 The Community of Practice (CoP) of this piece is a somewhat broad one, but in general I would say that it is students in their 3rd year of their bachelor's degrees - the ones who will soon go on intership and enter the workforce - and are socially avoidant. That is, they have trouble speaking with and are painfully shy around strangers. I have several friends who arre like this, and being an introvert who have no difficulties being loud and the center of attention (tooting my own horn here), I feel that something that could at least somewhat help them practice interacting with others (especially for something important like an interview) would help a bit. This is also coming from my experience during primary school when the vice principal came to interview both me and a classmate about why we wanted to join their private secondary girl's school and we spent the entire interview with just me answering the vice principal's questions and my classmate quietly crying out of what I presumed to be nerves off to the side. The vice principal did not acknowledge her, and I feel that maybe something like that could have been avoided if my classmate at least knew how to answer the questions, or had practice backing her and so she could default to those if she was nervous. 
@@ -261,3 +263,9 @@ I had originally also tried to include a function where the microphone of the us
 ## What I Would Have Liked
 
 Even more responses for one, and questions. More variations on possible answers, unfortunately I can't predict them all and can only do some for several important buzzwords. I would have also liked to implement the speech to text function, as well as a camera function or something for users to practice maintaining eye contact with.
+
+## Watch Interview Simulator Here
+
+["Interview Simulator"](https://drive.google.com/file/d/1O4wpC5c00EGPIgHN3qo7IfL46z4R00k1/view?usp=sharing)
+
+Sorry I could not upload it to YouTube for some reason.
